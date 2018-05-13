@@ -1,0 +1,140 @@
+html,body{
+	width: 100%;
+	height: 100%;
+    min-height: 25rem;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background-color: #fff4eb;
+	background: url("../img/login/back.png") no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.container form{
+	width: 100%;
+    height: 7rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.5rem;
+    box-sizing: border-box;
+    padding: 1.2rem 1rem;
+}
+.container form label{
+    width: 100%;
+    display: block;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    background-color: blue;
+    text-align: center;
+    background: url(../img/login/input.png) no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-size: 0.6rem;
+
+}
+.container form label input{
+    border: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    width: 9rem;
+    color: white;
+    height: 1.2rem;
+    font-size: 0.6rem;
+    outline: none;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent !important;
+    background-image: none;
+    color: white !important;
+}
+
+.container .btn_div{
+    width: 100%;
+    height: 8.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    text-align: center;
+}
+.container .btn_div .passWord{
+    width: 100%;
+    height: 1.8rem;
+    overflow: hidden;
+    line-height: 2rem;
+    box-sizing: border-box;
+    padding: 0 1.8rem 0 2rem;
+}
+.container .btn_div .passWord .remember{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.container .btn_div .passWord .remember img{
+    width: 1rem;
+    float: left;
+    display: none;
+}
+.container .btn_div .passWord .remember img.active{
+    display: block;
+}
+
+
+.container .btn_div .passWord .remember span{
+    float: left;
+    line-height: 1rem;
+    color: #7d1010;
+    font-weight: 500;
+    font-size: 0.65rem;
+    margin-left: 0.1rem;
+}
+.container .btn_div .passWord .forget{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: right;
+    color: white;
+    font-size: 0.65rem;
+    text-shadow: 5px 2px 5px #ff838a;
+}
+
+.container .btn_div button{
+    width: 7rem;
+    height: 2.5rem;
+    margin-bottom: 0.3rem;
+    border: 0;
+    color: white;
+    text-shadow: 0px 1px 8px #000;
+    outline: none;
+}
+.container .btn_div .login_btn{
+    background: url(../img/login/btn_login.png) no-repeat;
+    background-size: 100% 100%;
+}
+.container .btn_div .register_btn{
+    background: url(../img/login/btn_register.png) no-repeat;
+    background-size: 100% 100%;	
+}
+.container .btn_div .webchat{
+    width: 100%;
+    height: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 5.2rem;
+}
+.container .btn_div .webchat img{
+    float: left;
+    width: 1.5rem;
+}
+.container .btn_div .webchat span{
+    float: left;
+    line-height: 1.3rem;
+    margin-left: 0.2rem;
+    color: #3f7900;
+    font-size: 0.6rem;
+}
+

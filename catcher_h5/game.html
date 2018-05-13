@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>娃娃机</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<link rel="stylesheet" type="text/css" href="css/tip.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.barrager.js"></script>
+	<script type="text/javascript" src="js/game/websocket.js"></script>
+	<script type="text/javascript" src="js/game/ajaxRequest.js"></script>
+	<script type="text/javascript" src="js/tip/tip.js"></script>
+	<script type="text/javascript" src="js/game/game.js"></script>
+<!-- 	<script src="js/videojs/video.js"></script>
+<script src="js/videojs/videojs-contrib-hls.js"></script> -->
+</head>
+<body>
+	<div class="game-cantainer">
+		<div class="video-content">
+			<!-- <video src="http://rtmp.wawa.4utec.cn/live/test.m3u8" class="video" id="video" autoplay="true" webkit-playsinline="true" playsinline="" controls="controls" >
+			</video>	 -->
+			<video src="http://rtmp.wawa.4utec.cn/live/1_A.m3u8" class="video" id="video" autoplay="true" webkit-playsinline="true" playsinline="" poster="img/game/back.png" >
+			</video>	
+		</div>
+		<div class="container">
+			<div class="top">
+				<div class="top-content go-back" id="go-back" onclick="javascript:window.location.href='index.html'">
+					<img src="img/game/go-back.png" alt="返回">
+				</div>
+				<div class="top-content coin-input">
+					<span id="coin-number">210</span>
+				</div>
+				<div class="top-content voucher">
+					<img src="img/game/voucher.png" alt="倦">
+				</div>
+				<div class="top-content fragment">
+					<img src="img/game/fragment.png" alt="碎片">
+				</div>
+			</div>
+			<div class="user">
+				<div class="user-left" id="game-user">
+					<div class="status">当前房间空闲</div>
+					<div class="head-img" id="head-img0"></div>
+					<div class="status1">
+						<div class="status-name">包子的母亲大人</div>
+						<div class="status-content">正在抓取...</div>
+					</div>
+				</div>
+				<div class="user-right">
+					<div class="status2">
+						<i id="watch">16</i>人在围观
+					</div>
+					<div class="img-content">
+						<div class="head-img" id="head-img1"></div>
+						<div class="head-img" id="head-img2"></div>
+						<div class="head-img" id="head-img3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="video-btn" id="video-btn">
+					<img src="img/game/video.png" alt="视频">
+				</div>
+				<div class="menu-list">
+					<ul>
+						<li id="menu-btn" value="1"><img src="img/game/menu-btn.png" alt="菜单"></li>
+						<li id="barrage" value="0"><img src="img/game/tan.png" alt="菜单"></li>
+						<li id="setup"><img src="img/game/set.png" alt="菜单"></li>
+						<li id="detail"><img src="img/game/detail.png" alt="菜单"></li>
+						<li id="help"><img src="img/game/help.png" alt="菜单"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="spend">
+					<span><img src="img/game/coin.png" alt="金币"><i id="need-price">29</i></span>
+					<i style="margin: 0 0.2rem;color: #ff5a73;">或</i>
+					<span><img src="img/game/voucher.png" alt="卷"><i id="need-free">60</i></span>
+				</div>
+				<div class="button">
+					<div class="catch">
+						<img src="img/game/catch.png" alt="抓住">
+					</div>
+					<div class="start" id="start-game">
+						<img src="img/game/start.png" alt="开始游戏">
+					</div>
+					<div class="fail">
+						<img src="img/game/fail.png" alt="抓不住">
+					</div>
+				</div>
+			</div>
+			<canvas style="width: 100%;height: 8rem;position: absolute;">你的浏览器不支持canvas</canvas>
+		</div>
+		<div class="game-menu-list"></div>		
+	</div>
+</body>
+</html>
+

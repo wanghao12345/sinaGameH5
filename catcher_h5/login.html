@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="js/login/login.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label>用户名:<input type="text" autocomplete="off" name="userName"></label>
+			<label style="margin-top: 0.2rem;">密&nbsp;&nbsp;码:<input type="passWord" autocomplete="off" name="passWord"></label>
+		</form>
+		<div class="btn_div">
+			<div class="passWord">
+				<div class="remember" id="remember">
+					<img class="active" src="img/login/remember_1.png" alt="记住密码">
+					<img src="img/login/remember_2.png" alt="记住密码">
+					<span>记住密码</span>
+				</div>
+				<div class="forget">
+					忘记密码？
+				</div>
+			</div>
+			<button class="login_btn" id="login_btn">登录并授权</button>
+			<br/>
+			<button class="register_btn">新用户注册</button>
+			<div class="webchat">
+				<div class="webchat_btn" id="webchat_btn">
+					<img src="img/login/webchat.png" alt="微信">
+					<span>微信快速登录</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

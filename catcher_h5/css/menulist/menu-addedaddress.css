@@ -1,0 +1,136 @@
+.main-container .menu-list-addedaddresss{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main-container .menu-list-addedaddresss-content{
+    width: 14rem;
+    height: 16rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7rem;
+    margin-top: -10rem;
+    background: url(../../img/menulist/menu_addedaddress/back1.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-addedaddresss-back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 0.5rem;
+    padding-top: 2rem;
+}
+.main-container .menu-list-addedaddresss-back2 p{
+    color: #7d1010;
+    text-align: right;
+    width: 100%;
+    height: 1rem;
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+    line-height: 1rem;
+    font-size: 0.6rem;
+}
+.main-container .menu-list-addedaddress-title{
+	width: 6.8rem;
+    height: 3rem;
+    background: url(../../img/menulist/menu_addedaddress/title.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    margin-left: -3.5rem;
+}
+.main-container .menu-list-addedaddress-close{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    right: -0.5rem;
+    top: -0.5rem;
+    background: url(../../img/menulist/menu_news/close.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-addedaddress-button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0.2rem 4.3rem;
+    overflow: hidden;
+}
+.main-container .menu-list-addedaddress-button button{
+    width: 5rem;
+    height: 2.5rem;
+    border: 0;
+    padding: 0;
+}
+.main-container .menu-list-addedaddress-button button#cancer{
+	float: left;
+    background: url(../../img/menulist/menu_news/canser.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-addedaddress-button button.query{
+	float: right;
+    background: url(../../img/menulist/menu_news/query.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-addedaddress-main-content{
+    width: 100%;
+    height: 13rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.main-container .menu-list-addedaddress-main-content .item{
+    width: 100%;
+    height: 2.5rem;    
+    margin-bottom: 0.5rem;
+    overflow: hidden;   
+    background: url(../../img/menulist/menu_addedaddress/input-back.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-addedaddress-main-content .item .title{
+    width: 3rem;
+    height: 100%;
+    float: left;
+    font-size: 0.5rem;
+    color: white;
+    line-height: 2.5rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+.main-container .menu-list-addedaddress-main-content .item .content{
+    width: 9rem;
+    height: 100%;
+    float: left;
+    overflow:hidden;
+}
+.main-container .menu-list-addedaddress-main-content .item .content input{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    padding-right: 0.2rem;
+    color: white;
+    font-size: 0.6rem;
+    color: #b51b24;
+}
+.main-container .menu-list-addedaddress-main-content .item .content select{
+    width: 4.5rem;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    color: #b51b24;
+}
+
+

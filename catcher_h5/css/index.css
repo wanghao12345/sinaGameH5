@@ -1,0 +1,546 @@
+@import "menu.css";
+@import "menulist/menu-opinion.css";
+@import "menulist/menu-connect.css";
+@import "menulist/menu-help.css";
+@import "menulist/menu-share.css";
+@import "menulist/menu-share1.css";
+@import "menulist/menu-rank.css";
+@import "menulist/menu-cart.css";
+@import "menulist/menu-exchange.css";
+@import "menulist/menu-email.css";
+@import "menulist/menu-emailDetail.css";
+@import "menulist/menu-address.css";
+@import "menulist/menu-addedaddress.css";
+@import "menulist/menu-selectAddress.css";
+@import "menulist/menu-shopping.css";
+@import "menulist/menu-modifyName.css";
+@import "menulist/sign.css";
+
+button{
+    outline: none !important;
+}
+
+
+/*宽：16rem   高：28.4rem*/
+html,body{
+	width: 100%;
+	height: 100%;
+    position: fixed;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+.main-container .container{
+	width: 100%;
+	height: 100%; 
+/*     background: url('../img/index/index_back.png');
+background-size: 100% 100%; */
+    position: relative;
+}
+/*上部分*/
+.main-container .top-container{
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    overflow: hidden;
+}
+.main-container .top-container .top-left{
+    width: 7rem;
+    height: 1.8rem;
+    background: url(../img/index/top-left.png);
+    background-size: 100% 100%;  
+    float: left; 
+}
+.main-container .top-container .logo{
+    width: 1.8rem;
+    height: 1.8rem;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 2rem;
+}
+.main-container .top-container .logo .head-img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+.main-container .top-container .logo .head-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.main-container .top-container .logo .head-name{
+    width: 100%;
+    height: 1.1rem;
+    background-color: #ff9298;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 1.5px solid white;
+    margin-top: -0.3rem; 
+    display: none;
+}
+.main-container .top-container .logo .head-name span{
+    float: left;
+    color: white;
+    line-height: 1.1rem;
+    font-size: 0.6rem;
+    padding-left: 0.2rem;
+    width: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.main-container .top-container .logo .head-name img{
+    float: right;
+    width: 1rem;
+    margin-top: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+
+.main-container .top-container .recharge{
+    width: 5rem;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.main-container .top-container .recharge .recharge-content{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 0.3rem;
+}
+.main-container .top-container .recharge .recharge-content .coin{
+    width: 5rem;
+    height: 100%;
+    overflow: hidden;
+}
+.main-container .top-container .recharge .recharge-content .coin span{
+    height: 100%;
+    display: block;
+    text-align: left;
+    line-height: 1.1rem;
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: #ff5a73;
+    margin-top: 0.1rem;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 0.2rem;
+}
+.main-container .top-container .recharge .recharge-content .coin span.coin-img{
+    width: 1.5rem;
+    text-align: left;
+}
+.main-container .top-container .recharge .recharge-content .coin span.coin-img img{
+    width: 100%;
+}
+.main-container .top-container .recharge .recharge-content .coin span.coin-num{
+    width: 3.5rem;
+}
+.main-container .top-container .top-right{
+      width: 8rem;
+      float: left;
+      overflow: hidden;
+}
+.main-container .top-container .top-right .voucher{
+    width: 4rem;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 1rem;
+}
+.main-container .top-container .top-right .voucher img{
+    display: block;
+    width: 1.2rem;
+    float: left;
+    margin-top: 0.3rem;
+}
+.main-container .top-container .top-right .voucher span{
+    float: left;
+    display: block;
+    height: 100%;
+    line-height: 1.8rem;
+    margin-left: 0.2rem;
+    font-weight: 600;
+    color: #ff5a73;
+}
+.main-container .top-container .top-right .email{
+    width: 2rem;
+    height: 100%;
+    float: left;
+    background: rgba(0,0,0,0);
+    position: relative;
+}
+.main-container .top-container .top-right .email i{
+    width: 0.3rem;
+    height: 0.3rem;
+    display: block;
+    background-color: #fd0303;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.15rem;
+    margin-top: -0.05rem;
+    display: none;
+}
+.main-container .top-container .top-right .email img{
+    width: 1.2rem;
+    margin-top: 0.3rem;
+}
+.main-container .top-container .top-right .knapsack{
+    width: 2rem;
+    height: 100%;
+    float: left;
+    background: rgba(0,0,0,0);  
+    position: relative;  
+}
+.main-container .top-container .top-right .knapsack i{
+    width: 0.3rem;
+    height: 0.3rem;
+    display: block;
+    background-color: #fd0303;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.15rem;
+    margin-top: -0.05rem;
+    display: none;    
+}
+.main-container .top-container .top-right .knapsack img{
+    width: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+/*banner*/
+.main-container .middle-container{
+    width: 100%;
+    height: 8rem;
+    box-sizing: border-box;
+    background: url(../img/banner/zhuBG.jpg);
+    background-size: 100%;
+    padding-top: 1.5rem;
+}
+
+/*下部分*/
+.main-container .bottom-container{
+	width: 100%;
+	height: 100%;
+	margin-top: -8rem;
+	box-sizing: border-box;
+	padding-top: 8.1rem;
+}
+.main-container .bottom-container-content{
+    width: 100%;
+    height: 100%;
+/*    background: url(../img/index/index_back2.png);
+    background-size: 100% 100%;*/
+    box-sizing: border-box;
+    padding: 0 0.4rem;
+    padding-top: 0.8rem;
+}
+/*tab*/
+.main-container .bottom-container-content .tab-title{
+	width: 100%;
+	height: 3.5rem;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    overflow: hidden;
+    display: none;
+}
+.main-container .bottom-container-content .tab-title .tab-title-content{
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+
+}
+.main-container .bottom-container-content .tab-title ul{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.main-container .bottom-container-content .tab-title ul li{
+	width: 2.8rem;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0rem 0.1rem 0.5rem 0.1rem;
+}
+.main-container .bottom-container-content .tab-title ul li .tab{
+    width: 100%;
+    height: 100%;
+    background: url(../img/index/tab.png);
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0.4rem 0.7rem 0.4rem;
+}
+.main-container .bottom-container-content .tab-title ul li .tab .tab-top{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    line-height: 1.3rem;
+}
+.main-container .bottom-container-content .tab-title ul li .tab .tab-top img{
+	width: 1rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(1) .tab .tab-top img{
+	width: 1rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(2) .tab .tab-top img{
+	width: 1.1rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(3) .tab .tab-top img{
+	width: 0.9rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(4) .tab .tab-top img{
+	width: 1rem;
+    margin-left: 0.2rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(5) .tab .tab-top img{
+	width: 1rem;
+}
+
+
+.main-container .bottom-container-content .tab-title ul li .tab .tab-bottom{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: white;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    line-height: 1.8rem;
+    text-shadow: 1px 1px 6px #791319;
+}
+
+.main-container .bottom-container-content .tab-title ul li .tab .tab-bottom img{
+	width: 1.2rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(1) .tab .tab-bottom img{
+	width: 1.3rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(2) .tab .tab-bottom img{
+	width: 1.2rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(3) .tab .tab-bottom img{
+	width: 1.2rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(4) .tab .tab-bottom img{
+	width: 1.2rem;
+}
+.main-container .bottom-container-content .tab-title ul li:nth-child(5) .tab .tab-bottom img{
+	width: 1.8rem;
+}
+
+.main-container .bottom-container-content .tab-title ul li.active{
+    padding: 0rem 0.1rem 0.3rem 0.1rem;
+}
+.main-container .bottom-container-content .tab-title ul li.active .tab{
+	background: url(../img/index/tab_active.png);
+	background-size: 100% 100%;
+}
+.main-container .bottom-container-content .tab-title ul li.active .tab .tab-top{
+    line-height: 1.9rem;
+}
+.main-container .bottom-container-content .tab-title ul li.active .tab .tab-top img{
+    width: 1.3rem;
+}
+.main-container .bottom-container-content .tab-title ul li.active .tab .tab-bottom{
+    width: 100%;
+    height: 50%;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.main-container .bottom-container-content .tab-title ul li.active .tab .tab-bottom img{
+	width: 1.5rem;
+}
+
+/*tab的内容*/
+.main-container .bottom-container-content .tab-content{
+    width: 100%;
+    height: 100%;
+    /*margin-top: -3.5rem;*/
+    box-sizing: border-box;
+    padding-top: 3.5rem;
+    padding: 0rem 0.4rem 0.3rem 0.4rem;
+    overflow: hidden;
+}
+
+.main-container .bottom-container-content .tab-content .tab-list-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    float: left;
+}
+.main-container .bottom-container-content .tab-content ul{
+	width: 100%;
+}
+
+.main-container .bottom-container-content .tab-content ul li{
+    width: 50%;
+    height: 8rem;
+    box-sizing: border-box;
+    padding: 0rem 0.6rem 0.4rem 0.6rem;
+    float: left;
+    margin-bottom: 0.5rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list{
+	width: 100%;
+	height: 100%;
+/*	background: url(../img/index/list_back.png);
+	background-size: 100% 100%;*/
+}
+
+.main-container .bottom-container-content .tab-content ul li .list .list-top{
+    width: 100%;
+    height: 6rem;
+    position: relative;
+    padding: 0.05rem;
+    box-sizing: border-box;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top-free {
+    background: url(../img/index/list-top-free.png);
+    background-size: 100% 100%;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top-use {
+    background: url(../img/index/list-top-use.png);
+    background-size: 100% 100%;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top-repair {
+    background: url(../img/index/list-top-repair.png);
+    background-size: 100% 100%;
+}
+
+
+.main-container .bottom-container-content .tab-content ul li .list .list-top .surplus{
+    position: absolute;
+    width: 2rem;
+    right: 1.1rem;
+    top: 0.05rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .surplus img{
+    width: 100%;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-num{
+    position: absolute;
+    top: 0.05rem;
+    right: -0.1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../img/index/list_num.png);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 1.1rem;
+    font-size: 0.5rem;
+    font-weight: 550;
+    color: #ff5a73;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-new{
+    position: absolute;
+    top: 0.05rem;
+    left: : -0.1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../img/index/list_new.png);
+    background-size: 100% 100%;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-status{
+    position: absolute;
+    width: 96%;
+    height: 1.3rem;
+    left: 0.1rem;
+    overflow: hidden;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.1rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-img img{
+	width: 100%;
+	height: 100%;
+    border-radius: 0.2rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-status1{
+	background: rgba(238, 9, 9, 0.7);
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-status2{
+    background: rgba(35, 149, 238, 0.8);	
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-status img{
+    width: 1.2rem;
+    float: left;
+    position: absolute;
+    left: 0;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-top .list-status span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 1.3rem;
+    float: left;
+    font-size: 0.4rem;
+    line-height: 1.1rem;
+    color: white;
+}
+
+.main-container .bottom-container-content .tab-content ul li .list .list-bottom{
+	width: 100%;
+	height: 2rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-bottom .list-title{
+    width: 100%;
+    height: 1rem;
+    color: #666666;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.62rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-bottom .list-coin{
+    width: 90%;
+    height: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.5rem;
+    color: #ff7693;
+    box-sizing: border-box;
+    padding-right: 1rem;
+    overflow: hidden;
+    padding-left: 1.4rem;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-bottom .list-coin img{
+    width: 1.2rem;
+    float: left;
+}
+.main-container .bottom-container-content .tab-content ul li .list .list-bottom .list-coin span{
+    float: left;
+}
+
+
+
+
+button{
+    border:0;
+}
+/*loading样式*/
+.loading{
+    width: 100%;
+    height: 100%;
+    background: url(../img/index/loadingImg.png);
+    background-size: 100% 100%;
+}

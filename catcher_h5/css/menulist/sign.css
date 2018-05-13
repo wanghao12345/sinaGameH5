@@ -1,0 +1,137 @@
+.main-container .menu-list-signs{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main-container .menu-list-signs-content{
+    width: 15rem;
+    height: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5rem;
+    margin-top: -7rem;
+    background: url(../../img/menulist/menu_news/back1.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-signs-back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    padding-top: 1.5rem;
+}
+.main-container .menu-list-signs-back2 p{
+    color: #7d1010;
+    text-align: right;
+    width: 100%;
+    height: 1rem;
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+    line-height: 1rem;
+    font-size: 0.6rem;
+}
+.main-container .menu-list-sign-title{
+	width: 6.8rem;
+    height: 3rem;
+    background: url(../../img/sign/title.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    margin-left: -3.5rem;
+}
+.main-container .menu-list-sign-close{
+    position: absolute;
+	width: 1.8rem;
+    height: 1.8rem;
+    right: 1rem;
+    top: 1rem;	
+    background: url(../../img/menulist/menu_news/close.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.main-container .menu-list-sign-button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0.2rem 4.8rem;
+    overflow: hidden;
+}
+.main-container .menu-list-sign-button button{
+	width: 5rem;
+	height: 2.6rem;
+    border: 0;
+    padding: 0;
+    outline:none;
+}
+.main-container .menu-list-sign-button button#cancer{
+	float: left;
+    background: url(../../img/menulist/menu_news/canser.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.main-container .menu-list-sign-button button.query{
+	float: right;
+    background: url(../../img/sign/sign-btn.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.main-container .menu-list-sign-main-content{
+    width: 13rem;
+    height: 10rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.main-container .menu-list-sign-main-content .top{
+    width: 100%;
+    height: 4.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0.5rem 2rem 0rem 2rem;
+}
+.main-container .menu-list-sign-main-content .bottom{
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 0.5rem;    
+}
+.main-container .menu-list-sign-main-content .item{
+    width: 3rem;
+    height: 4rem;
+    float: left;
+}
+.main-container .menu-list-sign-main-content .item .item-title{
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.6rem;
+    font-weight: 550;
+    color: #ff2447;
+}
+.main-container .menu-list-sign-main-content .item .item-content{
+    width: 100%;
+    height: 3rem;   
+    position: relative; 
+}
+
+.main-container .menu-list-sign-main-content .item .item-content img{
+    width: 3rem;
+}
+.main-container .menu-list-sign-main-content .item .item-content img#ok{
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 1.5rem;
+    margin-top: -0.75rem;
+    left: 50%;
+    margin-left: -1rem;
+}

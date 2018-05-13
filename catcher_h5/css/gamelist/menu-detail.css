@@ -1,0 +1,124 @@
+.game-cantainer .menu-list-details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.game-cantainer .menu-list-details-content{
+    width: 15rem;
+    height: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5rem;
+    margin-top: -7rem;
+    background: url(../../img/menulist/menu_news/back1.png);
+    background-size: 100% 100%;
+}
+.game-cantainer .menu-list-details-back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    padding-top: 1.5rem;
+}
+.game-cantainer .menu-list-details-back2 p{
+    color: #7d1010;
+    text-align: right;
+    width: 100%;
+    height: 1rem;
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+    line-height: 1rem;
+    font-size: 0.6rem;
+}
+.game-cantainer .menu-list-detail-title{
+	width: 6.8rem;
+    height: 3rem;
+    background: url(../../img/game/gamemenu/detail/title.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    margin-left: -3.5rem;
+}
+.game-cantainer .menu-list-detail-close{
+    position: absolute;
+	width: 1.8rem;
+    height: 1.8rem;
+    right: 1rem;
+    top: 1rem;	
+    background: url(../../img/menulist/menu_news/close.png);
+    background-size: 100% 100%;
+}
+.game-cantainer .menu-list-detail-button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.game-cantainer .menu-list-detail-button button{
+    width: 5rem;
+    height: 2.6rem;
+    border: 0;
+    padding: 0;
+}
+.game-cantainer .menu-list-detail-button button#cancer{
+	float: left;
+    background: url(../../img/menulist/menu_news/canser.png);
+    background-size: 100% 100%;
+}
+.game-cantainer .menu-list-detail-button button.query{
+	float: right;
+    background: url(../../img/menulist/menu_news/query.png);
+    background-size: 100% 100%;
+}
+.game-cantainer .menu-list-detail-main-content{
+    width: 12rem;
+    height: 10rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.game-cantainer .menu-list-detail-main-content .head{
+	width: 4rem;
+	height: 4rem;
+	margin: 0 auto;
+    background: url(../../img/game/gamemenu/detail/head-back.png);
+    background-size: 100% 100%;	
+    box-sizing: border-box;
+    padding: 0.2rem;
+}
+.game-cantainer .menu-list-detail-main-content .head img{
+	width: 100%;
+	height: 100%;
+}
+.game-cantainer .menu-list-detail-main-content .list{
+	width: 100%;
+	height: 5rem;
+}
+.game-cantainer .menu-list-detail-main-content .list ul{
+	width: 100%;
+	height: 100%;
+}
+.game-cantainer .menu-list-detail-main-content .list ul li{
+    width: 100%;
+    overflow: hidden;
+    line-height: 1rem;
+}
+.game-cantainer .menu-list-detail-main-content .list ul li label{
+    float: left;
+    color: #7d1010;
+    width: 2rem;
+}
+.game-cantainer .menu-list-detail-main-content .list ul li span{
+    float: left;
+    color: #ff5a73;
+    width: 10rem;
+}

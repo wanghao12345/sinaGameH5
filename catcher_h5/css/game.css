@@ -1,0 +1,300 @@
+@import "gamelist/menu-detail.css";
+@import "gamelist/menu-help.css";
+@import "gamelist/menu-setup.css";
+html,body{
+	width: 100%;
+	height: 100%;
+    overflow: hidden;
+}
+.game-cantainer{
+    display: none;
+}
+.game-cantainer .video-content{
+     width: 100%;
+     height: 100%;  
+}
+.game-cantainer .video{
+    width: 100%;
+    height: 100%;
+}
+
+.game-cantainer .container{
+	width: 100%;
+	height: 100%;
+	/*background:url(../img/game/back.png);*/
+	/*background-size: 100% 100%;*/
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+.game-cantainer .top{
+    width: 100%;
+    height: 2.3rem;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+}
+.game-cantainer .top .top-content{
+	height: 100%;
+	float: left;
+}
+.game-cantainer .top .go-back{
+    width: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+.game-cantainer .top .go-back img{
+	width: 1.3rem;
+}
+.game-cantainer .top .coin-input{
+    width: 5rem;
+    height: 1.2rem;
+    background: url(../img/game/coin-input.png);
+    background-size: 100% 100%;
+    margin-top: 0.5rem;
+}
+.game-cantainer .top .coin-input span{
+	width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #ff5a73;
+    margin-top: 0.1rem;
+}
+.game-cantainer .top .voucher{
+    width: 2rem;
+    line-height: 3rem;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+}
+.game-cantainer .top .voucher img{
+	width: 1.3rem;
+    display: none;
+}
+.game-cantainer .top .fragment{
+    width: 2rem;
+    line-height: 3rem;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+}
+.game-cantainer .top .fragment img{
+	width: 1.3rem;	
+    display: none;
+}
+.game-cantainer .user{
+    width: 100%;
+    height: 2.3rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    background: url(../img/game/user-back.png);
+    background-size: 100% 100%;
+
+}
+.game-cantainer .user .head-img{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 0.25rem;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px #cebdbd;
+}
+.game-cantainer .user .head-img img{
+    width: 100%;
+    border-radius: 2rem;
+}
+.game-cantainer .user .user-left{
+	width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.game-cantainer .user .user-left .hide{
+    display: none;
+}
+.game-cantainer .user .user-left .status{
+    width: 100%;
+    height: 100%;
+    line-height: 2.3rem;
+    color: #ff5a73;    
+}
+.game-cantainer .user .user-left .status1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+}
+
+
+
+.game-cantainer .user .user-left .status1 .status-name{
+    width: 100%;
+    height: 50%;
+    line-height: 1.5rem;
+    font-size: 0.6rem;
+    color: #ff5a73;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.game-cantainer .user .user-left .status1 .status-content{
+    width: 100%;
+    height: 50%;
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+    color: #632429;
+}
+
+.game-cantainer .user .user-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.game-cantainer .user .user-right .status2{
+    width: 100%;
+    height: 100%;
+    padding-right: 5.6rem;
+    position: absolute;
+    font-size: 0.6rem;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    line-height: 0.7rem;
+    color: #ff5a73;
+}
+.game-cantainer .user .user-right .img-content{
+    width: 5.4rem;
+    float: right;
+}
+.game-cantainer .user .user-right .img-content .head-img{
+    float: left;
+    box-sizing: border-box;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px #cebdbd;
+}
+.game-cantainer .user .user-right .img-content .head-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.game-cantainer .menu{
+    width: 1.8rem;
+    height: 6rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 5rem;
+    z-index: 1;
+}
+.game-cantainer .menu .video-btn{
+	width: 1.8rem;
+    height: 1.8rem;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    border: 1px solid white;
+    display: none;
+}
+.game-cantainer .menu .video-btn img{
+	width: 1.5rem;
+}
+.game-cantainer .menu .menu-list{
+    width: 104%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 2rem;
+    box-sizing: border-box;
+    border: 1px solid white;
+    box-shadow: 1px 3px 3px #bcbbbb;
+}
+.game-cantainer .menu .menu-list ul{
+	width: 100%;
+}
+.game-cantainer .menu .menu-list ul li{
+    width: 1.8rem;
+    height: 1.8rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.game-cantainer .menu .menu-list ul li#menu-btn{
+    border-radius: 2rem;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 3px #bcbbbb;
+    line-height: 2.3rem;
+}
+.game-cantainer .menu .menu-list ul li img{
+	width: 1.5rem;
+}
+.game-cantainer .bottom{
+	width: 100%;
+	height: 4rem;
+	position: absolute;
+	bottom: 0.2rem;
+}
+.game-cantainer .bottom .spend{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+.game-cantainer .bottom .spend span{
+	overflow: hidden;
+}
+.game-cantainer .bottom .spend span img{
+    width: 1.2rem;
+}
+.game-cantainer .bottom .spend span i{
+	margin-left: 0.2rem;
+    color: #ff5a73;
+    font-size: 0.6rem;
+}
+.game-cantainer .bottom .spend  i{
+    color: #ff5a73;
+    font-size: 0.6rem;
+}
+.game-cantainer .bottom .button{
+	width: 100%;
+	height: 2rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.game-cantainer .bottom .button .catch{
+    width: 4rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 0rem;
+}
+.game-cantainer .bottom .button .catch img{
+	width: 100%;
+}
+.game-cantainer .bottom .button .start{
+    width: 4.5rem;
+    left: 50%;
+    position: absolute;
+    top: 0rem;
+    margin-left: -2.25rem;
+}
+.game-cantainer .bottom .button .start img{
+	width: 100%;
+}
+.game-cantainer .bottom .button .fail{
+	width: 4rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 0rem;
+}
+.game-cantainer .bottom .button .fail img{
+	width: 100%;
+}

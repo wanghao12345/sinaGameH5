@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>娃娃机</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<!-- index -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/tip.css">
+	<link rel="stylesheet" type="text/css" href="js/lib/banner/swipeslider.css">
+	<!-- game -->
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<link rel="stylesheet" type="text/css" href="css/loading.css">
+	<!-- play -->
+	<link rel="stylesheet" type="text/css" href="css/play/play.css">
+	<!-- index -->
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="js/index/ajaxRequest.js"></script>
+	<script type="text/javascript" src="js/lib/banner/swipeslider.js"></script>
+	<script type="text/javascript" src="js/lib/beat/beat.js"></script>
+	<script type="text/javascript" src="js/tip/tip.js"></script>
+	<script type="text/javascript" src="js/index/index.js"></script>
+	<!-- <script type="text/javascript" src="js/index/wx.js"></script> -->
+	<!-- game -->
+	<script type="text/javascript" src="js/jquery.barrager.js"></script>
+	<script type="text/javascript" src="js/game/websocket.js"></script>
+	<script type="text/javascript" src="js/game/ajaxRequest.js"></script>
+	<script type="text/javascript" src="js/tip/tip.js"></script>
+	<script type="text/javascript" src="js/game/game.js"></script>
+	<script type="text/javascript" src="js/loading/loading.js"></script>
+	<!-- play -->
+	<script type="text/javascript" src="js/play/play.js"></script>
+
+
+
+</head>
+<body>
+	<!-- 主页 -->
+	<div class="main-container">
+		<div class="container">
+			<div class="top-container">
+				<div class="top-left">
+					<div class="logo" id="logo-btn">
+						<!-- <div class="head-img" id="head-img"> -->
+						<!-- <div id="head-img" style="display: none"></div> -->
+						<div class="head-img" id="head-img">
+							<img src="img/index/head-logo.png">
+						</div>
+						<div class="head-name">
+							<span id="head-name"></span>
+							<img src="img/menu/menu_write.png" alt="编辑">
+						</div>
+						<div id="inviation_code" style="display: none"></div>
+						<div id="bonus" style="display: none"></div>
+						<div id="totalDay" style="display: none"></div>
+						<div id="sigStatus" style="display: none"></div>
+					</div>	
+					<div class="recharge">
+						<div class="recharge-content">
+							<div class="coin">
+								<span class="coin-img"><img src="img/index/coin_left.png" alt=""></span>
+								<span class="coin-num" id="my-coin">0</span>
+							</div>
+						</div>
+					</div>									
+				</div>
+				<div class="top-right">
+					<div class="voucher">
+						<img src="img/game/voucher.png" alt="">
+						<span id="my-voucher">0</span>
+					</div>
+					<button class="email" id="menu-email">
+						<i class="tips"></i><img src="img/index/email.png" alt="">
+					</button>
+					<button class="knapsack" id="menu-knapsack">
+						<i class="tips"></i><img src="img/index/knapsack.png" alt="">
+					</button>
+				</div>
+			</div>
+			<div class="middle-container">
+				<div class="flexslider" id="flexslider">
+					<figure id="full_feature" class="swipslider">
+					    <ul class="sw-slides" id="slides">
+					    </ul>
+					</figure>
+				</div>	
+				<div class="banner-btn">
+					<ul>
+						
+					</ul>
+				</div>		
+			</div>
+			<div class="bottom-container">
+				<div class="bottom-container-content" style="padding-top: 0.3rem;">
+					<div class="tab-title" style="display: none">
+						<div class="tab-title-content">
+							<ul id="tab">
+								<li class="active">
+									<div class="tab">
+										<div class="tab-bottom">
+											全部
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="tab">
+										<div class="tab-bottom">
+											人气
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="tab">
+										<div class="tab-bottom">
+											推荐
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="tab">
+										<div class="tab-bottom">
+											新品
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="tab">
+										<div class="tab-bottom">
+											日本制
+										</div>
+									</div>
+								</li>
+							</ul>						
+						</div>
+					</div>
+					<div class="tab-content" style="padding-top: 0rem;margin-top: 0rem;">
+						<div class="tab-list-content tab1-content">
+							<ul id="machineList">
+							</ul>
+						</div>														
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-frame" style="display: block"></div>
+		<div class="menu-list-frame" style="width: 100%;height: 100%;margin-top: -28.4rem;"></div>
+		<div class="tip-frame"></div>			
+		<div class="tip-frame-1"></div>			
+	</div>
+	<!-- 观看游戏房间 -->
+	<div class="game-cantainer">
+		<div class="loading-back"></div>
+		<div class="video-content" id="video-content">
+		<!--<video id="video" class="video" value='1' style="object-fit: fill" webkit-playsinline="true" x-webkit-airplay="true"  playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" preload="auto"  poster="img/game/back.png" src="http://rtmp.wawa.4utec.cn/live/1_A.m3u8" >
+	 			</video>		 -->	
+ 			<video id="video" class="video" value='1' style="object-fit: fill" webkit-playsinline="true" x-webkit-airplay="true"  playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="false" preload="auto" src="http://rtmp.wawa.4utec.cn/live/1_A.m3u8" >
+ 			</video>
+		</div>
+		<div class="container">
+			<div class="top">
+				<div class="top-content go-back" id="go-back" onclick="javascript:location.reload();">
+					<img src="img/game/go-back.png" alt="返回">
+				</div>
+				<div class="top-content coin-input">
+					<span id="coin-number"></span>
+				</div>
+				<div class="top-content voucher">
+					<img src="img/game/voucher.png" alt="倦">
+				</div>
+				<div class="top-content fragment">
+					<img src="img/game/fragment.png" alt="碎片">
+				</div>
+			</div>
+			<div class="user">
+				<div class="user-left" id="game-user">
+					<div class="status">当前房间空闲</div>
+					<div class="head-img hide" id="head-img0"></div>
+					<div class="status1 hide" id="status1">
+						<div class="status-name">包子的母亲大人</div>
+						<div class="status-content">正在抓取...</div>
+					</div>
+				</div>
+				<div class="user-right">
+					<div class="status2">
+						<i id="watch"></i>人在围观
+					</div>
+					<div class="img-content">
+						<div class="head-img" id="head-img1"></div>
+						<div class="head-img" id="head-img2"></div>
+						<div class="head-img" id="head-img3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="video-btn" id="video-btn">
+					<img src="img/game/video.png" alt="视频">
+				</div>
+				<div class="menu-list">
+					<ul>
+						<li id="menu-btn" value="1"><img src="img/game/menu-btn.png" alt="菜单"></li>
+						<li id="barrage" value="0"><img src="img/game/tan.png" alt="菜单"></li>
+						<li id="setup"><img src="img/game/set.png" alt="菜单"></li>
+						<li id="detail"><img src="img/game/detail.png" alt="菜单"></li>
+						<li id="help" style="display: none;"><img src="img/game/help.png" alt="菜单"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="spend">
+					<span><img src="img/game/coin.png" alt="金币"><i id="need-price">29</i></span>
+					<i style="margin: 0 0.2rem;color: #ff5a73;">或</i>
+					<span><img src="img/game/voucher.png" alt="卷"><i id="need-free">60</i></span>
+				</div>
+				<div class="button">
+					<!-- <div class="catch">
+						<img src="img/game/catch.png" alt="抓住">
+					</div> -->
+					<div class="start" id="start-game">
+						<img src="img/game/start.png" alt="开始游戏">
+					</div>
+					<!-- <div class="fail">
+						<img src="img/game/fail.png" alt="抓不住">
+					</div> -->
+				</div>
+			</div>
+			<canvas style="width: 100%;height: 8rem;position: absolute;">你的浏览器不支持canvas</canvas>
+		</div>
+		<div class="game-menu-list"></div>		
+	</div>		
+	<!-- 玩游戏房间 -->
+	<div class="play-container">
+		<div class="play-interface">
+			<!-- <img id="play-video"  src="http://web.zhuazhuale.4utec.cn:8090/1_A.mjpeg" /> -->
+			<img id="play-video"  src="" />
+		</div>
+		<div class="play-operation">
+			<p class="play-time">25</p>
+			<div id="play-up" class="play-up">
+				<img src="img/play/up.png"/>
+			</div>
+			<div id="play-down" class="play-down">
+				<img src="img/play/down.png"/>
+			</div>
+			<div id="play-left" class="play-left">
+				<img src="img/play/left.png"/>
+			</div>
+			<div id="play-right" class="play-right">
+				<img src="img/play/right.png"/>
+			</div>
+			<div id="play-catch" class="play-catch">
+				<img src="img/play/grap.png"/>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

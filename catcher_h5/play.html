@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>娃娃机</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/loading.css">
+	<link rel="stylesheet" type="text/css" href="css/play/play1.css">
+	<link rel="stylesheet" type="text/css" href="css/tip.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.barrager.js"></script>
+	<script type="text/javascript" src="js/play/websocket.js"></script>
+	<script type="text/javascript" src="js/loading/loading.js"></script>
+	<script type="text/javascript" src="js/play/ajaxRequest.js"></script>
+	<script type="text/javascript" src="js/play/machine.js"></script>
+	<script type="text/javascript" src="js/tip/tip.js"></script>
+	<script type="text/javascript" src="js/play/play1.js"></script>
+</head>
+<body>
+	<div class="game-cantainer">
+		<div class="loading-back">
+			
+		</div>
+		<div class="video-content" id="video-content">
+			<img id="play-video" style="width:100%; height:100%;" src="img/banner/zhuBG.jpg" />
+		</div>
+		<div class="container">
+			<div class="top">
+				<div class="top-content go-back" id="go-back" onclick="javascript:history.back(-1);">
+					<img src="img/game/go-back.png" alt="返回">
+				</div>
+				<div class="top-content coin-input">
+					<span id="coin-number"></span>
+				</div>
+				<div class="top-content voucher">
+					<img src="img/game/voucher.png" alt="倦">
+					<span class="voucher-num">0</span>
+				</div>
+				<div class="top-content fragment">
+					<img src="img/game/fragment.png" alt="碎片">
+				</div>
+			</div>
+			<div class="user">
+				<div class="user-left" id="game-user">
+					<!-- <div class="status">当前房间空闲</div>
+					<div class="head-img" id="head-img0"></div>
+					<div class="status1">
+						<div class="status-name">包子的母亲大人</div>
+						<div class="status-content">正在抓取...</div>
+					</div> -->
+				</div>
+				<div class="user-right">
+					<div class="status2">
+						<i id="watch"></i>人在围观
+					</div>
+					<div class="img-content">
+						<div class="head-img" id="head-img1"></div>
+						<div class="head-img" id="head-img2"></div>
+						<div class="head-img" id="head-img3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="video-btn" id="video-btn">
+					<img src="img/game/video.png" alt="视频">
+				</div>
+				<div class="menu-list">
+					<ul>
+						<li id="menu-btn" value="1"><img src="img/game/menu-btn.png" alt="菜单"></li>
+						<li id="barrage" value="0"><img src="img/game/tan.png" alt="菜单"></li>
+						<li id="setup"><img src="img/game/set.png" alt="菜单"></li>
+						<li id="detail"><img src="img/game/detail.png" alt="菜单"></li>
+						<li id="help" style="display: none;"><img src="img/game/help.png" alt="菜单"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="time">离抓取结束还有  <i id="countDown">0</i> 秒</div>
+			<div class="bottom">
+				<div class="bottom-content">
+					<div class="bottom-left">
+						<button class="play up" id="play-up"><img src="img/play/up.png" alt="上"></button>
+						<button class="play down" id="play-down"><img src="img/play/down.png" alt="下"></button>
+						<button class="play left" id="play-left"><img src="img/play/left.png" alt="左"></button>
+						<button class="play right" id="play-right"><img src="img/play/right.png" alt="右"></button>
+					</div>
+					<div class="bottom-right">
+						<button class="grap" id="play-catch"><img src="img/play/grap.png" alt="抓"></button>
+					</div>
+				</div>	
+			</div>
+			<canvas style="width: 100%;height: 8rem;position: absolute;">你的浏览器不支持canvas</canvas>
+		</div>
+		<div class="game-menu-list"></div>		
+	</div>
+</body>
+</html>
+

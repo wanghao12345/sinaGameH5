@@ -1,0 +1,105 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.play-container{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.play-container .play-interface{
+    width:100%;
+    height:100%; 
+    position:absolute; 
+    pointer-events: none; 
+    vertical-align:bottom;
+    top:-170px;
+}
+.play-container .play-interface img{
+    width:100%; 
+    height:100%;
+}
+.play-container .play-operation{
+    width:100%;
+    height:100%; 
+    position:absolute;
+}
+.play-container .play-operation p.play-time{
+    font-weight: 900;
+    position: absolute;
+    left: 40px;
+    top: 70px;
+    font-size: 40px;
+    color: red;
+    font-family: monospace;
+}
+.play-container .play-operation .play-up{
+    position:absolute;
+    left:80px; 
+    bottom:100px; 
+    width:61px; 
+    height:61px;
+}
+.play-container .play-operation .play-up img{
+    width:100%; 
+    height:100%;
+    pointer-events: none;
+}
+
+.play-container .play-operation .play-down{
+    position:absolute;
+    left:80px; 
+    bottom:20px; 
+    width:61px; 
+    height:61px;
+}
+.play-container .play-operation .play-down img{
+    width:100%; 
+    height:100%;
+    pointer-events: none;
+}
+
+.play-container .play-operation .play-left{
+    position:absolute;
+    left:20px; 
+    bottom:60px; 
+    width:61px; 
+    height:61px;
+}
+.play-container .play-operation .play-left img{
+    width:100%; 
+    height:100%;
+    pointer-events: none;
+}
+
+.play-container .play-operation .play-right{
+    position:absolute;
+    left:140px; 
+    bottom:60px; 
+    width:61px; 
+    height:61px;
+}
+.play-container .play-operation .play-right img{
+    width:100%; 
+    height:100%;
+    pointer-events: none;
+}
+.play-container .play-operation .play-catch{
+    position:absolute;
+    right:15px; 
+    bottom:25px; 
+    width:100px; 
+    height:100px;
+}
+.play-container .play-operation .play-catch img{
+    width:100%; 
+    height:100%; 
+    pointer-events: none;
+}
+
+
+
+

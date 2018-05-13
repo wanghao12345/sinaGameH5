@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>测试</title>
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	    <link rel="shortcut icon" href="/favicon.ico">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>	    
+	    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	    <script type="text/javascript" src="js/wx2.js"></script>
+	    <script>
+			var $_GET = (function() {
+		      var url = window.document.location.href.toString();
+		      var u = url.split("?");
+		      if (typeof(u[1]) == "string") {
+		        u = u[1].split("&");
+		        var get = {};
+		        for (var i in u) {
+		          var j = u[i].split("=");
+		          get[j[0]] = j[1];
+		        }
+		        return get;
+		      } else {
+		        return {};
+		      }
+		    })();
+
+	  		window.onload = function(){
+//	  			var wx_code = $_GET['code'];
+//	  			if (wx_code==null) {
+//		  			window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx43d8e413ecccb057&redirect_uri=http://web.zhuazhuale.4utec.cn:8902/oauth2.php&response_type=code&scope=snsapi_login&state=1#wechat_redirect";
+//	  			}else{
+//	  				getWeixinUserInfo(wx_code,function(data){
+//	  					document.getElementById("span").innerHTML = data;
+//		            });
+//	  			}
+
+	  			getSignPackage("大家抓抓乐","这里都在排队，也不知道排什么，你也来看看?","http://web.zhuazhuale.4utec.cn:8902/index.html","http://web.zhuazhuale.4utec.cn:8902/icon.png");
+	  		}
+	    </script>
+  	</head>
+	<body>
+		<span id="span">文本</span>
+ 	</body>
+</html>

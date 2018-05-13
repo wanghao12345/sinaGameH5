@@ -1,0 +1,72 @@
+.main-container .menu-list-helps{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main-container .menu-list-helps-content{
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8rem;
+    margin-top: -12rem;
+    background: url(../../img/menulist/menu_help/help.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-helps-back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 3.2rem 1rem 1rem 1rem;
+}
+.main-container .menu-list-help-close{
+    position: absolute;
+    width: 2rem;
+    height: 1.3rem;
+    right: 1.4rem;
+    top: 0.15rem;
+    background: url(../../img/menulist/menu_help/close.png);
+    background-size: 100% 100%;
+    z-index: 0;
+}
+.main-container .menu-list-help-button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0px 4.3rem;
+    overflow: hidden;
+}
+.main-container .menu-list-help-button button{
+	width: 6rem;
+	height: 3rem;
+    border: 0;
+    padding: 0;
+}
+.main-container .menu-list-help-main-content{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.main-container .menu-list-help-main-content h4{
+    font-size: 12px;
+    color: black;
+    padding: 0.3rem 0;
+}
+.main-container .menu-list-help-main-content p{
+    font-size: 12px;
+    color: #6d6d6d;
+    line-height: 0.7rem;
+}
+.main-container .menu-list-help-main-content .help-img{
+    text-align: center;
+    margin: 0.3rem 0;
+}

@@ -1,0 +1,100 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	width:100%;
+	height: 100%;
+	background: url(../../img/login/login-phone/bj.png);
+	background-size: 100% 100%;
+}
+
+.container-top{
+	width:100%;
+	height: 60%;
+}
+.container-bottom{
+	width:100%;
+	height: 40%;
+}
+.container-bottom .input{
+	width: 12rem;
+    height: 2rem;
+    border: 0.08rem solid #07aef1;
+    margin: 0 auto;
+    border-radius: 2rem;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+    position: relative;
+}
+.container-bottom .input span{
+    width: 3rem;
+    height: 100%;
+    display: block;
+    float: left;
+    line-height: 2rem;
+    text-align: right;
+    font-size: 0.6rem;
+    color: #a69494;
+}
+.container-bottom .input input{
+    width: 8rem;
+    height: 100%;
+    display: block;
+    float: left;
+    outline: none;
+    border: 0;
+    font-size: 0.6rem;
+    color: #07aef1;
+}
+
+.container-bottom .input button.verification-btn{
+    width: 4.5rem;
+    height: 1.7rem;
+    margin-top: 0.15rem;
+    outline: none;
+    border: 0;
+    font-size: 0.6rem;
+    color: white;
+    background: url(../../img/login/login-phone/aniuBJ3.png);
+    background-size: 100% 100%;
+    float: left;
+    padding: 0;
+    position: absolute;
+    right: 0.2rem;
+}
+.container-bottom .input span.CountDown{
+    width: 4.5rem;
+    height: 1.7rem;
+    margin-top: 0.15rem;
+    border: 0;
+    background-color: #9d9999;
+    border-radius: 2rem;
+    text-align: center;
+    line-height: 1.7rem;
+    color: white;
+    font-size: 0.65rem;
+    display: none; 
+    float: left;   
+    position: absolute;
+    right: 0.2rem;
+}
+.container-bottom .login-btn{
+    width: 8.5rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+.container-bottom .login-btn button{
+    width: 100%;
+    height: 100%;
+    background: url(../../img/login/login-phone/aniuBJ2.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 0.7rem;
+}
+
+

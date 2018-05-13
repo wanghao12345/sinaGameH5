@@ -1,0 +1,190 @@
+.main-container .menu-list-carts{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: url(../../img/menulist/menu_rank/back.png);
+    background-size: 100% 100%;
+        z-index: 2;
+}
+
+.main-container .menu-list-carts-content{
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5rem;
+    margin-top: -10rem;
+    background: url(../../img/menulist/menu_rank/content-rank.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-carts-content .my-rank{
+    width: 100%;
+    height: 2.8rem;
+    background: url(../../img/menulist/menu_rank/my-rank.png);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #7d1010;
+    font-size: 0.7rem; 
+}
+
+
+.main-container .menu-list-carts-back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.main-container .menu-list-cart-close{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: -0.3rem;
+    top: -0.6rem;
+    background: url(../../img/menulist/menu_news/close.png);
+    background-size: 100% 100%;
+    z-index: 0;
+    outline: none;
+}
+.main-container .menu-list-cart-tab1 {
+    position: absolute;
+    width: 5.5rem;
+    height: 2.4rem;
+    left: 1.6rem;
+    top: -2.1rem;
+    z-index: 0;
+    background: rgba(0,0,0,0);
+}
+.main-container .menu-list-cart-tab1 img{
+    width: 100%;
+    height: 100%;
+}
+.main-container .menu-list-cart-tab2 {
+    position: absolute;
+    width: 5.5rem;
+    height: 2.4rem;
+    right: 1.6rem;
+    top: -2.1rem;
+    z-index: 0;
+    outline: none;
+    background: rgba(0,0,0,0);
+}
+
+.main-container .menu-list-cart-tab2 img{
+    width: 100%;
+    height: 100%;
+}
+.main-container .menu-list-cart-button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0px 4.3rem;
+    overflow: hidden;
+}
+.main-container .menu-list-cart-button button{
+	width: 6rem;
+	height: 3rem;
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+.main-container .menu-list-cart-main-content{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.main-container .menu-list-cart-main-content ul{
+    width: 100%;
+    height: 100%;
+}
+/*未下单*/
+.main-container .menu-list-cart-main-content ul li.no-order{
+    width: 100%;
+    height: 5rem;
+    background: url(../../img/menulist/menu_cart/back.png);
+    background-size: 100% 100%;
+    margin: 0.2rem 0;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .top{
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .top .top-left{
+    width: 4rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .top .top-left img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .top .top-right{
+    width: 9rem;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .top .top-right div{
+    width: 100%;
+    height: 1rem;
+    color: white;
+    font-size: 0.5rem;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .top .top-right div i{
+    color: red;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .bottom{
+    width: 100%;
+    height: 2rem;
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 0.25rem;
+    padding-right: 0.5rem;
+}
+.main-container .menu-list-cart-main-content ul li.no-order .bottom button{
+    width: 3.5rem;
+    height: 1.5rem;
+    background: url(../../img/menulist/menu_cart/query-btn.png);
+    background-size: 100% 100%; 
+}
+/*已下单*/
+.main-container .menu-list-cart-main-content ul li.order{
+    height: 4rem;
+    position: relative;
+}
+.main-container .menu-list-cart-main-content ul li.order .status{
+    width: 2.7rem;
+    height: 1.7rem;
+    position: absolute;
+    right: 1rem;
+    top: -0.3rem;
+}
+.main-container .menu-list-cart-main-content ul li.order .status0{/* 未发货 */
+    background: url(../../img/menulist/menu_cart/UnshippedDelivery.png);
+    background-size: 100% 100%; 
+}
+.main-container .menu-list-cart-main-content ul li.order .status1{/* 已发货 */
+    background: url(../../img/menulist/menu_cart/AlreadyShipped.png);
+    background-size: 100% 100%; 
+}
+.main-container .menu-list-cart-main-content ul li.order .status2{/* 已签收 */
+    background: url(../../img/menulist/menu_cart/HaveSigned .png);
+    background-size: 100% 100%; 
+}
+
+
+

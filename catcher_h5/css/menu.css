@@ -1,0 +1,129 @@
+.main-container .mask{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    z-index: 2;
+}
+.main-container .menu-content{
+	width: 6rem;
+	height: 100%;
+	background: url(../img/menu/back.png);
+	background-size: 100% 100%;
+}
+.main-container .menu-head{
+    width: 100%;
+    height: 6rem;
+    box-sizing: border-box;
+    padding: 1rem 0.8rem 0rem 0.5rem;
+    position: relative;
+}
+.main-container .menu-head .upHeadImg{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -1.25rem;
+    top: 1rem;
+}
+.main-container .menu-head .upHeadImg input.file{
+    height: 2rem;
+    font-size: 200%;
+    opacity: 0;
+}
+.main-container .menu-head .head-img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: white;
+}
+.main-container .menu-head .head-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.main-container .menu-head .head-name{
+    width: 100%;
+    height: 1.3rem;
+    background-color: #ff9298;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 1.5px solid white;
+}
+.main-container .menu-head .head-name span{
+	float: left;
+    color: white;
+    line-height: 1.3rem;
+    font-size: 0.6rem;
+    padding-left: 0.2rem;
+    width: 3.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.main-container .menu-head .head-name img{
+	float: right;
+    width: 1rem;
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;
+    /*display: none;*/
+}
+.main-container .menu-head .head-ID{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.main-container .menu-head .head-Int{
+	font-size: 0.6rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+.main-container .menu-list{
+    width: 100%;
+    height: 16rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0rem 0.8rem 0rem 0.1rem;
+    margin-top: 1rem;
+}
+.main-container .menu-list ul{
+	width: 100%;
+}
+.main-container .menu-list ul li{
+    width: 100%;
+    height: 1.4rem;
+    background-color: #ffd9dc;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    margin: 0.2rem;
+    border: 1.5px solid white;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+}
+.main-container .menu-list ul li img{
+    width: 1rem;
+    float: left;
+    margin-top: 0.15rem;
+}
+.main-container .menu-list ul li:first-child img{
+    margin-top: 0.25rem;
+}
+.main-container .menu-list ul li span{
+    float: left;
+    font-size: 0.6rem;
+    color: #ff9298;
+    line-height: 1.3rem;
+    margin-left: 0.5rem;
+}
+.main-container .menu-list ul li.active{
+    background-color: #ff9298;
+}
+.main-container .menu-list ul li.active span{
+    color: white;
+}
+
+

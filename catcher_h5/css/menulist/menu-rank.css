@@ -1,0 +1,225 @@
+.main-container .menu-list-ranks{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: url(../../img/menulist/menu_rank/back.png);
+    background-size: 100% 100%;
+        z-index: 2;
+}
+
+.main-container .menu-list-ranks-content{
+    width: 15rem;
+    height: 19rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5rem;
+    margin-top: -10rem;
+    background: url(../../img/menulist/menu_rank/content-rank.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-ranks-content .my-rank{
+    width: 100%;
+    height: 2.3rem;
+    background: url(../../img/menulist/menu_rank/my-rank.png);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 2.3rem;
+    color: #7d1010;
+    font-size: 0.7rem;
+}
+
+
+.main-container .menu-list-ranks-back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.main-container .menu-list-rank-close{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: -0.3rem;
+    top: -0.6rem;
+    background: url(../../img/menulist/menu_news/close.png);
+    background-size: 100% 100%;
+    z-index: 0;
+    outline: none;
+}
+.main-container .menu-list-rank-tab1 {
+    position: absolute;
+    width: 4rem;
+    height: 1.8rem;
+    left: 3.4rem;
+    top: -1.5rem;
+    z-index: 0;
+    background: rgba(0,0,0,0);
+}
+.main-container .menu-list-rank-tab1 img{
+    width: 100%;
+    height: 100%;
+}
+.main-container .menu-list-rank-tab2 {
+    position: absolute;
+    width: 4rem;
+    height: 1.8rem;
+    right: 3.4rem;
+    top: -1.5rem;
+    z-index: 0;
+    background: rgba(0,0,0,0);
+}
+.main-container .menu-list-rank-tab2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .menu-list-rank-button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0px 4.3rem;
+    overflow: hidden;
+}
+.main-container .menu-list-rank-button button{
+	width: 6rem;
+	height: 3rem;
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+.main-container .menu-list-rank-main-content{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.main-container .menu-list-rank-main-content ul{
+    width: 100%;
+    height: 100%;
+}
+.main-container .menu-list-rank-main-content ul li{
+    width: 100%;
+    height: 1.5rem;
+    background: url(../../img/menulist/menu_rank/rank-list-bottom.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+}
+.main-container .menu-list-rank-main-content ul li .ranking-left{
+    width: 60%;
+    height: 100%;
+    float: left;
+    overflow:hidden;
+}
+.main-container .menu-list-rank-main-content ul li .ranking-left .rank-number{
+    width: 15%;
+    height: 76%;
+    float: left;
+    display: block;
+    margin-left: 8%;
+    margin-top: 3%;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: white;
+}
+.main-container .menu-list-rank-main-content ul li .ranking-left .rank-name{
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: block;
+    line-height: 1.6rem;
+    font-size: 0.5rem;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    color: white;
+}
+.main-container .menu-list-rank-main-content ul li .ranking-right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    overflow:hidden;
+}
+.main-container .menu-list-rank-main-content ul li .ranking-right .rank-icon{
+    width: 20%;
+    height: 50%;
+    float: left;
+    background: url(../../img/menulist/menu_rank/rank-icon.png);
+    background-size: 100% 100%;
+    margin-top: 9%;
+}
+.main-container .menu-list-rank-main-content ul li .ranking-right .rank-icon-1{
+    width: 16%;
+    height: 52%;
+    float: left;
+    background: url(../../img/index/knapsack.png);
+    background-size: 100% 100%;
+    margin-top: 7%;
+}
+
+
+.main-container .menu-list-rank-main-content ul li .ranking-right .rank-money{
+    width: 76%;
+    height: 100%;
+    float: left;
+    line-height: 1.6rem;
+    font-size: 0.5rem;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 0.2rem;
+}
+
+.main-container .menu-list-rank-main-content ul li:nth-child(1){
+    background: url(../../img/menulist/menu_rank/rank-list-top.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-rank-main-content ul li:nth-child(1) .ranking-left .rank-number{
+    background: url(../../img/menulist/menu_rank/rank-num1.png);
+    background-size: 100% 100%;
+}
+
+
+
+
+.main-container .menu-list-rank-main-content ul li:nth-child(2){
+    background: url(../../img/menulist/menu_rank/rank-list-top.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-rank-main-content ul li:nth-child(2) .ranking-left .rank-number{
+    background: url(../../img/menulist/menu_rank/rank-num2.png);
+    background-size: 100% 100%;
+}
+
+.main-container .menu-list-rank-main-content ul li:nth-child(3){
+    background: url(../../img/menulist/menu_rank/rank-list-top.png);
+    background-size: 100% 100%;
+}
+.main-container .menu-list-rank-main-content ul li:nth-child(3) .ranking-left .rank-number{
+    background: url(../../img/menulist/menu_rank/rank-num3.png);
+    background-size: 100% 100%;
+}
+
+
+
+.main-container .menu-list-rank-main-content h4{
+    font-size: 12px;
+    color: black;
+    padding: 0.3rem 0;
+}
+.main-container .menu-list-rank-main-content p{
+    font-size: 12px;
+    color: #6d6d6d;
+    line-height: 0.7rem;
+}
+.main-container .menu-list-rank-main-content .help-img{
+    text-align: center;
+    margin: 0.3rem 0;
+}

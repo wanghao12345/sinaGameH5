@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>娃娃机</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/play/play.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/play/motionjqeg.js"></script>
+	<script type="text/javascript" src="js/play/play.js"></script>
+</head>
+<body>
+	<div style="width:100%; height:100%; position:absolute; pointer-events: none; vertical-align:bottom;top:-170px;" />
+		<img id="video" style="width:100%; height:100%;" src="http://180.154.146.51:28080/1_A.mjpeg" />
+	</div>
+	<div style="width:100%; height:100%; position:absolute;">
+		<p>25</p>
+		<div id="up" style="position:absolute;left:80px; bottom:100px; width:61px; height:61px;">
+			<img style="width:100%; height:100%; pointer-events: none;" src="img/play/up.png"/>
+		</div>
+		<div id="down" style="position:absolute;left:80px; bottom:20px; width:61px; height:61px;">
+			<img style="width:100%; height:100%; pointer-events: none;" src="img/play/down.png"/>
+		</div>
+		<div id="left" style="position:absolute;left:20px; bottom:60px; width:61px; height:61px;">
+			<img style="width:100%; height:100%; pointer-events: none;" src="img/play/left.png"/>
+		</div>
+		<div id="right" style="position:absolute;left:140px; bottom:60px; width:61px; height:61px;">
+			<img style="width:100%; height:100%; pointer-events: none;" src="img/play/right.png"/>
+		</div>
+		<div id="catch" style="position:absolute;right:15px; bottom:25px; width:100px; height:100px;">
+			<img style="width:100%; height:100%; pointer-events: none;" src="img/play/grap.png"/>
+		</div>
+	</div>		
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+            motionjpeg("#video"); // Use the function on the image
+    });
+</script>
+
+</html>
